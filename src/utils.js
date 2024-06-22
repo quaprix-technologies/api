@@ -17,6 +17,7 @@ const sendMail = async(mailOptions, res) => {
 
     res.send('Email sent successfully');
   } catch (error) {
+    console.error(error);
     res.status(500).send('Error sending email');
   }
 };
